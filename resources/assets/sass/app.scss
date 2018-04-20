@@ -1,0 +1,40 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Font-Awesome
+@import "../../../node_modules/@fortawesome/fontawesome/styles.css";
+
+.navbar-brand {
+  background-image: url("/../images/icon/logo-small.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 93px;
+  height: 37px;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .nav-link.active {
+  border-bottom: 3px solid $brand-primary;
+}
+
+.required {
+  color:red;
+  font-weight: bold;
+}
+
+.list-group label.work {
+  font-weight: normal;
+}
+
+.test {
+  text-align: center;
+}

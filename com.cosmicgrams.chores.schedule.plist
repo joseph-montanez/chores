@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.cosmisgrams.chores</string>
+
+    <key>Program</key>
+    <string>/usr/local/bin/php</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/php</string>
+        <string>artisan</string>
+        <string>schedule:run</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/josephmontanez/Documents/Comentum/Chores</string>
+
+    <key>StartInterval</key>
+    <integer>1</integer>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/josephmontanez/Documents/Comentum/Chores/storage/logs/schedule.err</string>
+
+    <key>StandardOutPath</key>
+    <string>/Users/josephmontanez/Documents/Comentum/Chores/storage/logs/schedule.out</string>
+</dict>
+</plist>

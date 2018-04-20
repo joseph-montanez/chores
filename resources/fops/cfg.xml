@@ -1,0 +1,14 @@
+<fop version="1.0">
+<renderers>
+    <renderer mime="application/pdf">
+        <fonts>
+            <font kerning="yes" embed-url="/Users/josephmontanez/Documents/Comentum/Chores/resources/fops/segoeui.ttf" embedding-mode="subset">
+                <font-triplet name="Segoe-UI-Normal" style="normal" weight="normal"/>
+            </font>
+            <font kerning="yes" embed-url="/Users/josephmontanez/Documents/Comentum/Chores/resources/fops/segoeuib.ttf" embedding-mode="subset">
+                <font-triplet name="Segoe-UI-Bold" style="normal" weight="bold"/>
+            </font>
+        </fonts>
+    </renderer>
+</renderers>
+</fop>
