@@ -16,7 +16,7 @@ use DatePeriod;
 use FetchLeo\LaravelXml\Facades\Xml;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\Process\Exception\ProcessFailedException;
-use Symfony\Component\Process\ProcessBuilder;
+use Symfony\Component\Process\Process;
 
 class ViewController
 {
@@ -97,7 +97,7 @@ class ViewController
 
         $xsl = resource_path('fops' . DIRECTORY_SEPARATOR . 'chores.week.xsl');
 
-        $builder = new ProcessBuilder([$java,
+        $process = new Process([$java,
             '-cp', $classpath,
             '-jar', $jar,
             //-- Config
@@ -111,7 +111,6 @@ class ViewController
             '-'
         ]);
 
-        $process = $builder->getProcess();
         $process->setWorkingDirectory($jar_dir);
         $process->setInput($xml->asXML());
         $process->run();
